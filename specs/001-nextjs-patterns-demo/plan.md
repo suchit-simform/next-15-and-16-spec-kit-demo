@@ -12,7 +12,7 @@ Demonstrate Next.js 15 and 16 pattern changes through static code examples with 
 ## Technical Context
 
 **Language/Version**: TypeScript (latest stable for Next.js 15/16 compatibility)  
-**Primary Dependencies**: Next.js 15.x and Next.js 16.x (side-by-side), React 19, TailwindCSS 3.x, NEEDS CLARIFICATION: syntax highlighting library (e.g., Prism.js, Shiki, react-syntax-highlighter)  
+**Primary Dependencies**: Next.js 15.x and Next.js 16.x (side-by-side), React 19, TailwindCSS 3.x, Shiki (build-time syntax highlighting; see research.md R1)  
 **Storage**: N/A (examples hardcoded in source code per clarifications)  
 **Testing**: None specified (user input: "Testing: nothing")  
 **Target Platform**: Web (modern browsers with progressive enhancement for older browsers)  

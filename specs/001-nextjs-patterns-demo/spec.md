@@ -76,9 +76,9 @@ A developer comparing Next.js 15 and 16 wants to easily switch between equivalen
 ### Functional Requirements
 
 - **FR-001**: System MUST display a homepage with clear navigation to Next.js 15 and Next.js 16 example sections
-- **FR-002**: System MUST present at least 3 distinct pattern examples for Next.js 15
-- **FR-003**: System MUST present at least 3 distinct pattern examples for Next.js 16
-- **FR-004**: Each pattern example MUST include a brief explanation of what changed and why it matters
+- **FR-002**: System MUST present at least 5 distinct pattern examples for Next.js 15 (covering v15.0-15.5 changes)
+- **FR-003**: System MUST present at least 5 distinct pattern examples for Next.js 16 (covering v16.0-16.1 changes)
+- **FR-004**: Each pattern example MUST include a comprehensive explanation containing: (1) breaking/non-breaking change flag, (2) migration impact level (HIGH/MEDIUM/LOW), (3) link to official Next.js blog post section, (4) one-sentence before/after comparison, (5) description of what changed (200-400 chars), (6) rationale for why it matters (300-500 chars)
 - **FR-005**: Each pattern example MUST display code snippets (static, syntax-highlighted text) demonstrating the pattern
 - **FR-006**: System MUST organize examples by category (e.g., Server Components, Data Fetching, Routing, Performance)
 - **FR-007**: System MUST render all examples using the respective Next.js version's recommended patterns
@@ -87,6 +87,7 @@ A developer comparing Next.js 15 and 16 wants to easily switch between equivalen
 - **FR-010**: Examples MUST be simple and focused on demonstrating a single pattern at a time
 - **FR-011**: Core content (navigation, code snippets, explanations) MUST render and function without JavaScript
 - **FR-012**: System MUST log rendering errors to console and display user-friendly fallback messages when examples fail to render
+- **FR-013**: System MUST include comprehensive breaking changes comparison for Next.js 16 covering: async params/searchParams removal of sync access, revalidateTag() signature change (requires cacheLife profile), middleware.ts deprecation (use proxy.ts), and image quality/localPatterns validation changes
 
 ### Key Entities _(include if feature involves data)_
 
