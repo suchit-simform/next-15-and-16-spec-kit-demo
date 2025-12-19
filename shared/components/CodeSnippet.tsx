@@ -30,6 +30,9 @@ export function CodeSnippet({
         dangerouslySetInnerHTML={{ __html: highlightedHTML }}
         role="region"
         aria-label={`Code snippet in ${language}`}
+        style={{
+          backgroundColor: "oklch(21% 0.034 264.665)",
+        }}
       />
     );
   }
@@ -41,6 +44,9 @@ export function CodeSnippet({
       role="region"
       aria-label={`Code snippet in ${language} (plain text)`}
       tabIndex={0}
+      style={{
+        backgroundColor: "oklch(21% 0.034 264.665)",
+      }}
     >
       <code className={`language-${language}`}>{rawCode}</code>
     </pre>

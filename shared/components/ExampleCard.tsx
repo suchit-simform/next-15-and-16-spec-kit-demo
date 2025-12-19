@@ -20,11 +20,17 @@ export function ExampleCard({ example }: ExampleCardProps) {
   const otherVersion = example.version === 15 ? 16 : 15;
 
   return (
-    <article className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-8 hover:shadow-lg transition-shadow duration-200">
+    <article
+      className="text-foreground rounded-lg shadow-md p-4 sm:p-6 mb-8 hover:shadow-lg transition-shadow duration-200"
+      style={{
+        color: "var(--foreground)",
+        backgroundColor: "var(--background)",
+      }}
+    >
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4 gap-4">
         <div className="flex-1">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
+          <h2 className="text-xl sm:text-2xl font-bold text-foreground">
             {example.title}
           </h2>
           <p className="text-xs sm:text-sm text-gray-600 mt-1">
