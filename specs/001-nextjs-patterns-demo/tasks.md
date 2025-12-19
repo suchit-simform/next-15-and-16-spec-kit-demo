@@ -151,14 +151,14 @@ This is a pnpm monorepo with the following structure:
 
 ### Implementation for User Story 3
 
-- [ ] T058 [P] [US3] Create shared/components/VersionSwitcher.tsx client component with toggle between v15/v16
-- [ ] T059 [US3] Update ExampleCard.tsx to render "See in Next.js {otherVersion}" link when availableInOtherVersion=true, linking to relatedExampleId
-- [ ] T060 [US3] Update ExampleCard.tsx to render "Not available in Next.js {otherVersion}" message when availableInOtherVersion=false
-- [ ] T061 [US3] Set availableInOtherVersion and relatedExampleId fields in shared/lib/exampleData.ts for cross-version patterns
-- [ ] T062 [US3] Add VersionSwitcher component to Header.tsx for global version navigation
-- [ ] T063 [US3] Test cross-version navigation: click "See in Next.js 16" from Next.js 15 Async Request APIs → should navigate to Next.js 16 equivalent (if exists)
-- [ ] T064 [US3] Test "not available" message: verify patterns unique to one version display appropriate message
-- [ ] T065 [US3] Verify VersionSwitcher maintains current category context when switching versions (FR-008)
+- [x] T058 [P] [US3] Create shared/components/VersionSwitcher.tsx client component with toggle between v15/v16
+- [x] T059 [US3] Update ExampleCard.tsx to render "See in Next.js {otherVersion}" link when availableInOtherVersion=true, linking to relatedExampleId
+- [x] T060 [US3] Update ExampleCard.tsx to render "Not available in Next.js {otherVersion}" message when availableInOtherVersion=false
+- [x] T061 [US3] Set availableInOtherVersion and relatedExampleId fields in shared/lib/exampleData.ts for cross-version patterns
+- [x] T062 [US3] Add VersionSwitcher component to Header.tsx for global version navigation
+- [x] T063 [US3] Test cross-version navigation: click "See in Next.js 16" from Next.js 15 Async Request APIs → should navigate to Next.js 16 equivalent (if exists)
+- [x] T064 [US3] Test "not available" message: verify patterns unique to one version display appropriate message
+- [x] T065 [US3] Verify VersionSwitcher maintains current category context when switching versions (FR-008)
 
 **Checkpoint**: All user stories should now be independently functional - cross-version navigation complete
 
@@ -168,16 +168,16 @@ This is a pnpm monorepo with the following structure:
 
 **Purpose**: Styling, accessibility, and documentation improvements across all user stories
 
-- [ ] T066 [P] Apply TailwindCSS responsive design to all components (mobile, tablet, desktop breakpoints)
-- [ ] T067 [P] Add WCAG 2.1 AA compliant color contrast to code snippets and UI elements
-- [ ] T068 [P] Add aria-labels to CodeSnippet components describing code language and purpose
-- [ ] T069 [P] Add keyboard navigation support to CategoryNav and VersionSwitcher components
-- [ ] T070 Add focus indicators to all interactive elements (links, buttons)
-- [ ] T071 [P] Test and verify progressive enhancement across all pages (no-JS mode)
-- [ ] T072 [P] Add README.md to repository root with project overview and quickstart instructions
-- [ ] T073 Validate all examples render correctly with Shiki syntax highlighting (no fallback to rawCode)
-- [ ] T074 Run through quickstart.md workflow to verify developer onboarding experience
-- [ ] T075 Performance audit: verify code highlighting happens at build time (no runtime overhead)
+- [x] T066 [P] Apply TailwindCSS responsive design to all components (mobile, tablet, desktop breakpoints)
+- [x] T067 [P] Add WCAG 2.1 AA compliant color contrast to code snippets and UI elements
+- [x] T068 [P] Add aria-labels to CodeSnippet components describing code language and purpose
+- [x] T069 [P] Add keyboard navigation support to CategoryNav and VersionSwitcher components
+- [x] T070 Add focus indicators to all interactive elements (links, buttons)
+- [x] T071 [P] Test and verify progressive enhancement across all pages (no-JS mode)
+- [x] T072 [P] Add README.md to repository root with project overview and quickstart instructions
+- [x] T073 Validate all examples render correctly with Shiki syntax highlighting (no fallback to rawCode)
+- [x] T074 Run through quickstart.md workflow to verify developer onboarding experience
+- [x] T075 Performance audit: verify code highlighting happens at build time (no runtime overhead)
 
 ---
 

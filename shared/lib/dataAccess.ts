@@ -65,3 +65,35 @@ export function getExamplesByCategoryAndVersion(
 export function getCategoryById(id: string): ExampleCategory | undefined {
   return categories.find((cat) => cat.id === id);
 }
+
+/**
+ * Get the cross-version example link and data.
+ * Used for "See in Next.js X" cross-version navigation (FR-008).
+ *
+ * @param example - Current pattern example
+ * @returns Object with otherVersion, otherVersionExample, and route path, or null if not available
+ */
+export function getCrossVersionLink(example: PatternExample): {
+  otherVersion: 15 | 16;
+  otherVersionExample: PatternExample;
+  exampleId: string;
+  categoryId: string;
+} | null {
+  if (!example.availableInOtherVersion || !example.relatedExampleId) {
+    return null;
+  }
+
+  const otherVersionExample = getExampleById(example.relatedExampleId);
+  if (!otherVersionExample) {
+    return null;
+  }
+
+  const otherVersion = example.version === 15 ? 16 : 15;
+
+  return {
+    otherVersion,
+    otherVersionExample,
+    exampleId: otherVersionExample.id,
+    categoryId: otherVersionExample.category,
+  };
+}
