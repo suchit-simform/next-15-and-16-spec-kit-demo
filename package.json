@@ -1,11 +1,17 @@
 {
-  "name": "nextjs-15-and-16-adapting-usage-example",
+  "name": "nextjs-patterns-monorepo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "pnpm --filter nextjs15-examples dev & pnpm --filter nextjs16-examples dev",
+    "dev:15": "pnpm --filter nextjs15-examples dev",
+    "dev:16": "pnpm --filter nextjs16-examples dev",
+    "build": "pnpm --filter nextjs15-examples build && pnpm --filter nextjs16-examples build",
+    "build:15": "pnpm --filter nextjs15-examples build",
+    "build:16": "pnpm --filter nextjs16-examples build",
+    "start": "pnpm --filter nextjs15-examples start & pnpm --filter nextjs16-examples start",
+    "start:15": "pnpm --filter nextjs15-examples start",
+    "start:16": "pnpm --filter nextjs16-examples start",
     "lint": "eslint"
   },
   "dependencies": {
