@@ -12,6 +12,7 @@ export const categories: ExampleCategory[] = [
       "Patterns for fetching data, caching behavior, revalidation APIs",
     icon: "🔄",
     order: 1,
+    versions: [15, 16],
   },
   {
     id: "routing-navigation",
@@ -19,6 +20,7 @@ export const categories: ExampleCategory[] = [
     description: "Patterns for routing, navigation, middleware, forms",
     icon: "🧭",
     order: 2,
+    versions: [15, 16],
   },
   {
     id: "build-performance",
@@ -26,6 +28,7 @@ export const categories: ExampleCategory[] = [
     description: "Build tooling, bundlers, performance optimizations",
     icon: "⚡",
     order: 3,
+    versions: [15, 16],
   },
   {
     id: "server-components",
@@ -33,6 +36,7 @@ export const categories: ExampleCategory[] = [
     description: "Server/Client component patterns, rendering strategies",
     icon: "🧩",
     order: 4,
+    versions: [16],
   },
   {
     id: "developer-experience",
@@ -40,6 +44,7 @@ export const categories: ExampleCategory[] = [
     description: "DX improvements, error messages, debugging tools",
     icon: "🛠️",
     order: 5,
+    versions: [15],
   },
 ];
 

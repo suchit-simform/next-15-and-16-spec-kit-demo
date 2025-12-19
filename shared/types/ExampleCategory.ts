@@ -25,4 +25,7 @@ export interface ExampleCategory {
 
   /** Display order (lower = higher priority) */
   order: number;
+
+  /** Supported Next.js versions */
+  versions?: number[];
 }
